@@ -1,6 +1,5 @@
 import Gallery from "@/components/Gallery";
 import Homepage from "@/components/Homepage";
-import { template } from "@/constants/template";
 
 export default function Home() {
   return (
@@ -33,9 +32,6 @@ export default function Home() {
             "/images/gallery/img20.jpg",
           ]}
         />
-      </section>
-      <section className="h-screen">
-        <p>FAQs</p>
       </section>
     </main>
   );

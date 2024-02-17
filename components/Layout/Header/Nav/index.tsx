@@ -16,7 +16,11 @@ export default function index() {
               exit="exit"
               initial="initial"
             >
-              <Link href={link.href} className="text-black/90 text-5xl">
+              <Link
+                href={link.href}
+                target={link?.target}
+                className="text-black/90 text-5xl"
+              >
                 {link.label}
               </Link>
             </motion.div>

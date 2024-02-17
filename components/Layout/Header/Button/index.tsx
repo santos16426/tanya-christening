@@ -26,7 +26,7 @@ export default function Button({
       >
         <div
           className={cn(
-            "w-full h-full bg-[#FEC89D] text-black/80 uppercase",
+            "w-full h-full bg-[#EBD9C0] text-black/80 uppercase",
             styles.el
           )}
         >

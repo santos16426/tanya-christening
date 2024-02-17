@@ -1,6 +1,8 @@
 import React from "react";
 import { Alex_Brush } from "@next/font/google";
 import { cn } from "@/lib/utils";
+import { template } from "@/constants/template";
+import Link from "next/link";
 
 const alex = Alex_Brush({
   subsets: ["latin"],
@@ -28,7 +30,7 @@ type Props = {
 export default function RightPane({ name, title, fullDate, locations }: Props) {
   const { day, date, year, month } = fullDate;
   return (
-    <div className="w-full h-full justify-center items-center flex flex-col">
+    <div className="w-full h-full justify-center items-center flex flex-col text-center">
       <p className={cn("text-xl lg:text-3xl font-bold")}>Join us for the</p>
       <p className={cn(alex.className, "text-6xl lg:text-9xl")}>{title}</p>
       <p className="text-xl lg:text-3xl font-bold">of</p>
@@ -43,6 +45,16 @@ export default function RightPane({ name, title, fullDate, locations }: Props) {
             {loc.time} @ {loc.place}
           </div>
         ))}
+      </div>
+      <div className="flex flex-row gap-2 mt-2">
+        <button className="border-2 px-4 py-1 border-[#A46141] text-[#A46141]">
+          <Link href="https://forms.gle/bWS65uZxxxCiKqhb6" target="_blank">
+            RSVP
+          </Link>
+        </button>
+        <button className="border-2 px-4 py-1 border-[#A46141] text-[#A46141]">
+          Gift Registry
+        </button>
       </div>
     </div>
   );

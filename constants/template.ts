@@ -35,7 +35,7 @@ export const featureNav = [
   {
     label: "RSVP",
     target:'_blank',
-    href: 'https://docs.google.com/forms/u/0/',
+    href: 'https://forms.gle/bWS65uZxxxCiKqhb6',
   },
   {
     label: "Gift Registry",
@@ -47,17 +47,13 @@ export const featureNav = [
     href: '#gallery'
   },
   {
-    label: "FAQs",
-    href: '#faqs',
-  },
-  {
     label: "POV",
     target:'_blank',
     href: 'https://pov.camera/',
   },
 ]
 export const eventDetails = {
-  title: 'Christening',
+  title: '1st Birthday',
   name: 'Tanya Bernice',
   description: '',
   fullDate:{
@@ -68,14 +64,14 @@ export const eventDetails = {
   },
   locations: [{
     type: 'church',
-    place: 'Mt. Carmel',
+    place: 'Mt. Carmel (Baptism)',
     time: '2 PM',
     lat: '',
     long: '',
     shortLocation: ''
   },{
     type:'restaurant',
-    place: 'Wheatberry Cafe',
+    place: 'Wheatberry Bakery & Cafe',
     time: '3:30 PM',
     lat: '',
     long: '',

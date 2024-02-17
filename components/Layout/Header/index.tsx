@@ -15,7 +15,7 @@ export default function Header() {
           variants={boxMenuVariant}
           animate={isActive ? "open" : "closed"}
           initial="closed"
-          className="w-[430px] h-[650px] bg-[#FEC89D] relative rounded-xl"
+          className="w-[430px] h-[650px] bg-[#EBD9C0]/80 relative rounded-xl"
         >
           <AnimatePresence>{isActive && <Nav />}</AnimatePresence>
         </motion.div>

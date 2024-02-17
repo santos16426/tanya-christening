@@ -1,7 +1,7 @@
 export const boxMenuVariant = {
   open: {
     width: 430,
-    height: 650,
+    height: 500,
     top: "-12.5px",
     right: "-12.5px",
     transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
