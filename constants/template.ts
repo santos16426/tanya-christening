@@ -3,27 +3,32 @@ export const template = [
 
   },
   {
-    gallery: [
-      '/images/gallery/img1.jpg',
-      '/images/gallery/img2.jpg',
-      '/images/gallery/img3.jpg',
-      '/images/gallery/img4.jpg',
-      '/images/gallery/img5.jpg',
-      '/images/gallery/img6.jpg',
-      '/images/gallery/img7.jpg',
-      '/images/gallery/img8.jpg',
-      '/images/gallery/img9.jpg',
-      '/images/gallery/img10.jpg',
-      '/images/gallery/img11.jpg',
-      '/images/gallery/img12.jpg',
-      '/images/gallery/img13.jpg',
-      '/images/gallery/img14.jpg',
-      '/images/gallery/img15.jpg',
-      '/images/gallery/img16.jpg',
-      '/images/gallery/img17.jpg',
-      '/images/gallery/img18.jpg',
-      '/images/gallery/img19.jpg',
-      '/images/gallery/img20.jpg',
+    cards: [
+      {
+        id: 1,
+        className: "md:col-span-2 md:row-span-2",
+        thumbnail: "/images/gallery/img10.jpg",
+      },
+      {
+        id: 2,
+        className: "col-span-1",
+        thumbnail: "/images/gallery/img12.jpg",
+      },
+      {
+        id: 3,
+        className: "col-span-1",
+        thumbnail: "/images/gallery/img3.jpg",
+      },
+      {
+        id: 4,
+        className: "col-span-1 md:row-span-2",
+        thumbnail: "/images/gallery/img14.jpg",
+      },
+      {
+        id: 6,
+        className: "md:col-span-2 md:row-span-2",
+        thumbnail: "/images/gallery/img14.jpg",
+      },
     ]
   }
 ]

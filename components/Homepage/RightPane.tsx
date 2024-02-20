@@ -33,12 +33,13 @@ export default function RightPane({ name, title, fullDate, locations }: Props) {
     const baseGoogleMaps = `https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.long}`;
     const baseWaze = `https://waze.com/ul?ll=${loc.lat},${loc.long}&navigate=yes`;
 
-    const userAgent = navigator.userAgent;
-    if (/Android/.test(userAgent) || /iPhone|iPad|iPod/.test(userAgent)) {
-      return baseWaze;
-    } else {
-      return baseGoogleMaps;
+    if (typeof window !== "undefined") {
+      const userAgent = navigator.userAgent;
+      if (/Android/.test(userAgent) || /iPhone|iPad|iPod/.test(userAgent)) {
+        return baseWaze;
+      }
     }
+    return baseGoogleMaps;
   };
 
   return (
