@@ -6,7 +6,7 @@ export const template = [
     cards: [
       {
         id: 1,
-        className: "md:col-span-2 md:row-span-2",
+        className: "col-span-1 row-span-1 lg:col-span-2 lg:row-span-2",
         thumbnail: "/images/gallery/img10.jpg",
       },
       {
@@ -21,13 +21,13 @@ export const template = [
       },
       {
         id: 4,
-        className: "col-span-1 md:row-span-2",
+        className: "col-span-1 lg:row-span-2 row-span-2",
         thumbnail: "/images/gallery/img14.jpg",
       },
       {
-        id: 6,
-        className: "md:col-span-2 md:row-span-2",
-        thumbnail: "/images/gallery/img14.jpg",
+        id: 5,
+        className: "col-span-1 row-span-1 lg:col-span-2 lg:row-span-2",
+        thumbnail: "/images/gallery/img6.jpg",
       },
     ]
   }
