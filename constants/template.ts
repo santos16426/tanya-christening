@@ -66,15 +66,15 @@ export const eventDetails = {
     type: 'church',
     place: 'Mt. Carmel (Baptism)',
     time: '2 PM',
-    lat: '',
-    long: '',
-    shortLocation: ''
+    lat: '14.614438212193859',
+    long: '121.03086600316956',
+    shortLocation: '',
   },{
     type:'restaurant',
     place: 'Wheatberry Bakery & Cafe',
     time: '3:30 PM',
-    lat: '',
-    long: '',
+    lat: '14.630365960106852',
+    long: '121.03072251972857',
     shortLocation: ''
   }],
   motif: {

@@ -29,6 +29,18 @@ type Props = {
 
 export default function RightPane({ name, title, fullDate, locations }: Props) {
   const { day, date, year, month } = fullDate;
+  const generateMapLink = (loc: { lat: string; long: string }) => {
+    const baseGoogleMaps = `https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.long}`;
+    const baseWaze = `https://waze.com/ul?ll=${loc.lat},${loc.long}&navigate=yes`;
+
+    const userAgent = navigator.userAgent;
+    if (/Android/.test(userAgent) || /iPhone|iPad|iPod/.test(userAgent)) {
+      return baseWaze;
+    } else {
+      return baseGoogleMaps;
+    }
+  };
+
   return (
     <div className="w-full h-full justify-center items-center flex flex-col text-center py-10 b">
       <p className={cn("text-xl lg:text-3xl font-bold")}>Join us for the</p>
@@ -42,7 +54,9 @@ export default function RightPane({ name, title, fullDate, locations }: Props) {
         <div className="col-span-3 text-3xl">{day}</div>
         {locations.map((loc, idx) => (
           <div key={idx} className="col-span-3">
-            {loc.time} @ {loc.place}
+            <Link href={generateMapLink(loc)} target="_blank">
+              {loc.time} @ {loc.place}
+            </Link>
           </div>
         ))}
       </div>
