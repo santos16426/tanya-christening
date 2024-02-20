@@ -5,7 +5,7 @@ type Props = {};
 
 function index({}: Props) {
   return (
-    <div className="relative flex flex-col lg:flex-row w-full h-full">
+    <div className="relative flex flex-col lg:flex-row w-full h-full min-h-screen justify-center items-center">
       <div
         className="absolute top-0 left-0 z-[2] w-1/3 lg:w-1/5 aspect-square"
         style={{
@@ -20,7 +20,7 @@ function index({}: Props) {
           backgroundSize: "cover",
         }}
       />
-      <div className="w-full h-fit lg:h-full justify-end lg:pr-28 items-center flex relative pt-10 lg:pt-0">
+      <div className="w-full h-full justify-end lg:pr-28 items-center flex relative pt-10 lg:pt-0">
         <div className="relative scale-[70%] lg:scale-100 shadow-xl w-fit h-fit rounded-full flex flex-col items-center justify-center">
           <Image
             src="/images/gallery/img21.jpg"

@@ -30,7 +30,7 @@ type Props = {
 export default function RightPane({ name, title, fullDate, locations }: Props) {
   const { day, date, year, month } = fullDate;
   return (
-    <div className="w-full h-full justify-center items-center flex flex-col text-center">
+    <div className="w-full h-full justify-center items-center flex flex-col text-center py-10 b">
       <p className={cn("text-xl lg:text-3xl font-bold")}>Join us for the</p>
       <p className={cn(alex.className, "text-6xl lg:text-9xl")}>{title}</p>
       <p className="text-xl lg:text-3xl font-bold">of</p>

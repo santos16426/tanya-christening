@@ -4,9 +4,8 @@ import Homepage from "@/components/Homepage";
 export default function Home() {
   return (
     <main>
-      <section className="h-screen">
-        <Homepage />
-      </section>
+      <Homepage />
+
       <section className="">
         <Gallery
           images={[
