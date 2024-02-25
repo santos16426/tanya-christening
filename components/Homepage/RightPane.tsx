@@ -3,6 +3,16 @@ import { Alex_Brush } from "@next/font/google";
 import { cn } from "@/lib/utils";
 import { template } from "@/constants/template";
 import Link from "next/link";
+import {
+  ChurchIcon,
+  LocateFixed,
+  LocateFixedIcon,
+  MapPinned,
+  Navigation,
+  PiIcon,
+  PinIcon,
+  Utensils,
+} from "lucide-react";
 
 const alex = Alex_Brush({
   subsets: ["latin"],
@@ -54,9 +64,14 @@ export default function RightPane({ name, title, fullDate, locations }: Props) {
         <div className="text-4xl">{year}</div>
         <div className="col-span-3 text-3xl">{day}</div>
         {locations.map((loc, idx) => (
-          <div key={idx} className="col-span-3">
+          <div key={idx} className="col-span-3 hover:underline">
             <Link href={generateMapLink(loc)} target="_blank">
-              {loc.time} @ {loc.place}
+              <p className="flex gap-2 items-center justify-center">
+                {loc.time} @ {loc.place}
+                <span>
+                  <MapPinned size="18px" />
+                </span>
+              </p>
             </Link>
           </div>
         ))}

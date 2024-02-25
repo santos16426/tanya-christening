@@ -78,8 +78,8 @@ export const eventDetails = {
     type:'restaurant',
     place: 'Wheatberry Bakery & Cafe',
     time: '3:30 PM',
-    lat: '14.630365960106852',
-    long: '121.03072251972857',
+    lat: '14.6295578649709',
+    long: '121.03173661219138',
     shortLocation: ''
   }],
   motif: {
