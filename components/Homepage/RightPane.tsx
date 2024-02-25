@@ -39,18 +39,6 @@ type Props = {
 
 export default function RightPane({ name, title, fullDate, locations }: Props) {
   const { day, date, year, month } = fullDate;
-  const generateMapLink = (loc: { lat: string; long: string }) => {
-    const baseGoogleMaps = `https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.long}`;
-    const baseWaze = `https://waze.com/ul?ll=${loc.lat},${loc.long}&navigate=yes`;
-
-    if (typeof window !== "undefined") {
-      const userAgent = navigator.userAgent;
-      if (/Android/.test(userAgent) || /iPhone|iPad|iPod/.test(userAgent)) {
-        return baseWaze;
-      }
-    }
-    return baseGoogleMaps;
-  };
 
   return (
     <div className="w-full h-full justify-center items-center flex flex-col text-center py-10 b">
@@ -64,8 +52,14 @@ export default function RightPane({ name, title, fullDate, locations }: Props) {
         <div className="text-4xl">{year}</div>
         <div className="col-span-3 text-3xl">{day}</div>
         {locations.map((loc, idx) => (
-          <div key={idx} className="col-span-3 hover:underline">
-            <Link href={generateMapLink(loc)} target="_blank">
+          <div
+            key={idx}
+            className="col-span-3 hover:underline underline-offset-4"
+          >
+            <Link
+              href={`https://waze.com/ul?ll=${loc.lat},${loc.long}&navigate=yes`}
+              target="_blank"
+            >
               <p className="flex gap-2 items-center justify-center">
                 {loc.time} @ {loc.place}
                 <span>
