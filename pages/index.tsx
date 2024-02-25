@@ -8,7 +8,7 @@ export default function Home() {
     <main>
       <Homepage />
       {template[1].cards && <LayoutGrid cards={template[1].cards} />}
-      <div className="relative h-full w-full flex justify-between items-center flex-col lg:py-20 gap-10">
+      <div className="relative h-full w-full flex justify-between items-center flex-col lg:py-20 gap-10 p-20">
         <p className="text-6xl">
           Tanya&apos;s 1<sup>st</sup> Birthday Party POV Camera
         </p>
