@@ -45,7 +45,7 @@ export const featureNav = [
   {
     label: "Gift Registry",
     target:'_blank',
-    href: 'https://www.myregistry.com/',
+    href: 'https://www.myregistry.com/wishlist/ralph-santos-and-bernadette-santos-san-pedro-laguna/4168136/giftlist',
   },
   {
     label: 'Gallery',

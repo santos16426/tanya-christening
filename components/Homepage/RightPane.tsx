@@ -68,7 +68,12 @@ export default function RightPane({ name, title, fullDate, locations }: Props) {
           </Link>
         </button>
         <button className="border-2 px-4 py-1 border-[#A46141] text-[#A46141]">
-          Gift Registry
+          <Link
+            href="https://www.myregistry.com/wishlist/ralph-santos-and-bernadette-santos-san-pedro-laguna/4168136/giftlist"
+            target="_blank"
+          >
+            Gift Registry
+          </Link>
         </button>
       </div>
     </div>
